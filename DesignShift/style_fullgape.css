@@ -1,0 +1,270 @@
+/* CSS */
+.design-content {
+    display: none;
+}
+
+.design-content.active {
+    display: block;
+}
+
+.swichButton{
+    position: absolute;
+    z-index: 10000;
+}
+
+
+
+/* Wave effect */
+.wave-effect {
+    position: absolute;
+    border-radius: 50%; /* Make it circular */
+    width: 100px;
+    height: 100px;
+    /*transform: scale(0); /* Start from no size */
+    animation: waveAnimation 1s forwards; /* Animation definition */
+    pointer-events: none; /* So it doesn't interfere with other interactions */
+    z-index: 9999;
+    background-color: white;
+}
+
+@keyframes waveAnimation {
+    to {
+        transform: scale(100); /* Increase size */
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+/* Design 1 styles */
+#design1 {
+    /* styles for design 1 */
+    
+    
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background_raw.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navber{
+        
+        width: 85%;
+        margin: auto;
+        padding: 0px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 150px;
+        cursor: pointer;
+    
+    }
+    
+    .navber ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    .navber ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .navber ul li::after{
+        content: "";
+        height: 3px;
+        width: 0%;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navber ul li:hover::after{
+        width: 100%;
+    }
+    
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    
+    .content h1{
+        font-size: 70px;
+        margin-top: 80px;
+    }
+    
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    
+    .button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .butwrap{
+        background: #009688;
+        height: 100%;
+        width: 0%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    
+    .button:hover .butwrap{
+        width: 100%;
+    }
+    
+    .button:hover{
+        border: none;
+    }
+
+}
+
+
+/* Design 2 styles */
+#design2 {
+    /* styles for design 2 */
+    .fp-overflow {
+        display: inline-flex;
+        outline: 0;
+        /* display: none; */
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header2{
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .ul{
+        width: 85%;
+        margin: auto;
+        padding: 0px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    
+    .ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to left, #ba7453, #d1a984);
+        z-index: -1;
+    }
+    
+    .nav{
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        min-height: 10vh;
+        color: white;
+        align-items: center;
+        z-index: 100;
+    }
+    .logo{
+        grid-column: 2/3;
+        font-size: 24px;
+    }
+    .hamburger{
+        justify-self: end;
+        display: none;
+    }
+    
+
+    .s1{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        height: 60%;
+        width: 100%;
+        position: relative;
+        top: -10%;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .headline{
+        position: absolute;
+        top: 85%;
+        left: 5%;
+        font-size: 100px;
+        transform: translate(-20%, -70%);
+        color: white;
+        z-index: 3;
+    }
+    
+    .hero::after{
+        content: "";
+        background: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        opacity: 0.3;
+        top: 0;
+    }
+}

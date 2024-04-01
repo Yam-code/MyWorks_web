@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Make Website -Easy Tutorials</title>
+    <link rel="stylesheet" href="./fullpage/fullpage.min.css">
+    <link rel="stylesheet" href="./style_fullgape.css">
+</head>
+<body>
+<!-- HTML -->
+<div id="design1" class="design-content D1 active">
+    <!-- Design 1 content -->
+    <div class="banner">
+        <div class="navber">
+            <img  class="logo" src="./white_transparent.png" alt="white_transparent">
+            <ul>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu4</a></li>
+                <li><a href="#">Menu5</a></li>
+            </ul>
+        </div>
+
+                <div class="content">
+                    <h1>DESIGN YOUR LIFE</h1>
+                    <p>Subscribe Easy Tutorials Youtube Cannnel to watch more videos,<br>press the bell icon to get latest updates.</p>
+                    <div>
+                        <button class="button"><span class="butwrap"></span>WATCH MORE</button>
+                        <button id="switchDesign1" class="button switchButton"><span class="butwrap"></span>デザインを切り替え</button>
+                        <button class="button"><span class="butwrap"></span>SUBSCRIBE</button>
+                    </div>
+                </div>
+    </div>
+
+</div>
+<div id="design2" class="design-content D2">
+    <!-- Design 2 content -->
+    <header class="header2">
+        <nav class="nav">
+            <h3 class="logo">Dream Street</h3>
+            <img class="hamburger" src="./burger.svg" alt="hamburger">
+            <ul class="ul">
+                <li><a data-page="s1" href="#page1">Menu1</a></li>
+                <li><a data-page="s2" href="#page2">Menu2</a></li>
+                <li><a data-page="s3" href="#page3">Menu3</a></li>
+                <li><a data-page="s4" href="#page4">Menu4</a></li>
+                <li><a data-page="s5" href="#page5">Menu5</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div id="fullpage">
+        <section data-index="0" class="section s1">
+            <div class="hero">
+                <img class="image" src="./ex1.JPG" alt="">
+                <h1 class="headline">Dream Big</h1>
+            </div>
+            
+        </section>
+
+        <section data-index="1" class="section s2">
+            <h1>others</h1>
+            
+        </section>
+
+        <section data-index="2" class="section s3">
+            <button id="switchDesign2" class="switchButton">デザインを切り替え</button>
+        </section>
+        
+    </div>
+
+    <div class="slider"></div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" 
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./fullpage/fullpage.min.js"></script>
+<script src="./app_d2_fullpage.js"></script>
+<script src="sifts.js"></script>
+
+</body>
+</html>
