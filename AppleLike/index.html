@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hamburger.css">
+    <title>Apple Dev Ed</title>
+</head>
+<body onload="resetScroll()">
+    <header id="trigger" class="header1_horiz">
+        <nav class="nav1">
+            <h3 class="logo1">Dev</h3>
+            <ul class="ul1_horiz">
+                <div class="button" onclick="scroll_to_sec1()">
+                    <a>
+                        Sec1
+                        <span class="shift">›</span>
+                    </a>
+                    <div class="mask"></div>
+                </div>
+                <div class="button" onclick="scroll_to_sec2()">
+                    <a>
+                        Sec2
+                        <span class="shift">›</span>
+                    </a>
+                    <div class="mask"></div>
+                </div>
+                <div class="button" onclick="scroll_to_sec3()">
+                    <a>
+                        Sec3
+                        <span class="shift">›</span>
+                    </a>
+                    <div class="mask"></div>
+                </div>
+                <div class="button" onclick="scroll_to_sec4()">
+                    <a>
+                        Sec4
+                        <span class="shift">›</span>
+                    </a>
+                    <div class="mask"></div>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+    <header id="header" class="header1_vart">
+            <nav class="dc-menu">
+            <h3 class="logo1_horiz">Dev</h3>
+            <a href="javascript:void(0);" class="dc-menu-trigger"><span>Menu</span></a>
+            <div class="menu-overlay">
+                <ul class="ul">
+                    <li class="button" onclick="scroll_to_sec1()">Sec1</li>
+                    <li class="button" onclick="scroll_to_sec2()">Sec2</li>
+                    <li class="button" onclick="scroll_to_sec3()">Sec3</li>
+                    <li class="button" onclick="scroll_to_sec4()">Sec4</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1 class="line1">TEST TEXT 1</h1>
+        <!-- The New Dev Ed Pro -->
+        <h1 class="line2">TEST TEXT 2</h1>
+        <!-- REVOLUTIONARRY -->
+        <h1 class="line3">Line3</h1>
+        <h1 class="line4">Line4</h1>
+        <!-- <video src="./fullsec_fixed18very.mp4"  muted playsinline></video> -->
+        <video id = video  muted playsinline></video>
+    </div>
+    <section>
+        <h1>REVOLUTIONARRY</h1>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.js" 
+    integrity="sha512-EsTOU/UaIpa2ucwRUcghIIkGJu29H1PZBqb0Tu7YumheyfGKwo5ORrp3ufiyJoJT8TQhMYI25Al13eIw3uD63A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" 
+    integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" 
+    integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" 
+    integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    
+    <script src="./script_seg_hls.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
